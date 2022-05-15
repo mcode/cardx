@@ -43,14 +43,13 @@ publisher:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 #
-# pages:
-#   index.md:
-#     title: Example Home
-#   implementation.xml:
-#   examples.xml:
-#     title: Examples Overview
-#     simpleExamples.xml:
-#     complexExamples.xml:
+pages:
+  index.md:
+    title: Home
+  use-cases.md:
+    title: Use Cases
+  related-igs.md:
+    title: Related Implementation Guides
 #
 #
 # The parameters property represents IG.definition.parameter. Rather
