@@ -1,0 +1,62 @@
+From d7468a83709a66f1537846941b29a2754000e5c9 Mon Sep 17 00:00:00 2001
+From: Max Masnick <max@masnick.org>
+Date: Tue, 17 May 2022 13:15:49 -0400
+Subject: [PATCH] Custom template/colors
+
+---
+ custom-template/includes/_append.fragment-css.html |  8 ++++++++
+ custom-template/package/package.json               | 13 +++++++++++++
+ ig.ini                                             |  2 +-
+ 3 files changed, 22 insertions(+), 1 deletion(-)
+ create mode 100644 custom-template/includes/_append.fragment-css.html
+ create mode 100644 custom-template/package/package.json
+
+diff --git a/custom-template/includes/_append.fragment-css.html b/custom-template/includes/_append.fragment-css.html
+new file mode 100644
+index 0000000..f9328f0
+--- /dev/null
++++ b/custom-template/includes/_append.fragment-css.html
+@@ -0,0 +1,8 @@
++<style>
++/* all options http://build.fhir.org/ig/FHIR/ig-guidance/colors.html */
++
++:root {
++    --ig-status-text-color: #ff0000; /* 1. IG Title and status text color */
++    --ig-header-container-color: #4b0082; /* 22. Header container color (center) */
++}
++</style>
+\ No newline at end of file
+diff --git a/custom-template/package/package.json b/custom-template/package/package.json
+new file mode 100644
+index 0000000..cf0a032
+--- /dev/null
++++ b/custom-template/package/package.json
+@@ -0,0 +1,13 @@
++{ 
++  "name": "cardx.ig-template",
++  "type": "fhir.template",
++  "license": "CC0-1.0",
++  "description": "CardX FHIR IG Template",
++  "author": "http://hl7.org/fhir",
++  "canonical": "http://fhir.org/templates/cardx.ig-template",
++  "base": "fhir.base.template",
++  "dependencies": {
++    "fhir.base.template": "current"
++  },
++  "version": "0.1.0"
++}
+\ No newline at end of file
+diff --git a/ig.ini b/ig.ini
+index 5049fc5..7f1f096 100644
+--- a/ig.ini
++++ b/ig.ini
+@@ -1,3 +1,3 @@
+ [IG]
+ ig = fsh-generated/resources/ImplementationGuide-cardx.json
+-template = fhir.base.template#current
+\ No newline at end of file
++template = #custom-template
+\ No newline at end of file
+-- 
+2.32.1 (Apple Git-133)
+
