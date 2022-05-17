@@ -1,0 +1,13 @@
+{ 
+  "name": "cardx.ig-template",
+  "type": "fhir.template",
+  "license": "CC0-1.0",
+  "description": "CardX FHIR IG Template",
+  "author": "http://hl7.org/fhir",
+  "canonical": "http://fhir.org/templates/cardx.ig-template",
+  "base": "fhir.base.template",
+  "dependencies": {
+    "fhir.base.template": "current"
+  },
+  "version": "0.1.0"
+}
