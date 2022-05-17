@@ -53,12 +53,6 @@ There are six domains included in this implementation guide:
 5. Device
 6. Assessment
 
-***Note, this diagram is a WIP***
-
-<p align="center">
-<img src="CardXDiagram-2.drawio.png" width="600" >
-</p>
-
 
 ### Contact Information
 
