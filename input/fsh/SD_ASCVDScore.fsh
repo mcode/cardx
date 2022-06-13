@@ -3,6 +3,7 @@ Parent: Observation
 Id: ascvd-score
 Title: "Components for ASCVD Risk Score Estimation"
 Description: "A calculated value that indicates"
+* ^copyright = "This value set includes content from the American College of Cardiology Foundation (ACCF), which is copyright © 2016"
 * code = $LNC#9549-2
 * status MS
 * component ^slicing.discriminator.type = #pattern
