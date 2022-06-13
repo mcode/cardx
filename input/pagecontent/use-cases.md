@@ -1,10 +1,6 @@
 
 ### Hypertension Use Case Version 0.1
 
-
-
-### Hypertension Use Case Version 0.1
-
 This narrative example illustrates the data values and information captured for patient with hypertension throughout their patient journey.
 
 **Initial Clinical Encounter**
