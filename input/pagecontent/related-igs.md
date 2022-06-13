@@ -60,6 +60,46 @@ There are several Implementation Guides that share similar objectives or leverag
     - Produced using HL7 standards and affiliated with the Patient Care Work Group
     - US Realm, not universal
 
+### Stages of Current, Related Implementation Guides
+
+<table class="table">
+<thead>
+    <tr>
+        <th>IG Name</th>
+        <th>Working Group</th>
+        <th>Realm</th>
+        <th>Stage</th>
+        <th>State</th>
+        <th>Notes</th>
+    </tr>
+</thead>
+<tbody>
+{% for resource in site.data.Working-Groups %}
+
+    <tr>
+
+        {% capture url %}{{ resource.IG-Link }}{% endcapture %}
+        <td ><a href="{{ url }}">{{ resource.IG-Name }}</a></td>
+    
+        <td>{{ resource.Working-Group }}</td>
+
+        <td>{{ resource.Realm }}</td>
+
+        <td>{{ resource.Stage }}</td>
+
+        <td>{{ resource.State }}</td>
+        
+        <td>{{ resource.Notes }}</td>
+
+    </tr>
+
+{% endfor %}
+</tbody>
+</table>
+
+<hr style="margin-top: 3em; margin-bottom: 3em;">
+
+
 
 ### Profile groups
 
@@ -164,3 +204,6 @@ There are several Implementation Guides that share similar objectives or leverag
 </table>
 
 <hr style="margin-top: 3em; margin-bottom: 3em;">
+
+
+
