@@ -206,4 +206,38 @@ There are several Implementation Guides that share similar objectives or leverag
 <hr style="margin-top: 3em; margin-bottom: 3em;">
 
 
+**Personal Health Devices**
+
+<table class="table">
+<thead>
+    <tr>
+        <th>Profile</th>
+        <th>Type</th>
+        <th>Computable Name</th>
+        <th>Definition</th>
+    </tr>
+</thead>
+<tbody>
+{% for resource in site.data.PHDevices %}
+
+    <tr>
+
+        {% capture url %}{{ resource.URL }}{% endcapture %}
+        <td ><a href="{{ url }}">{{ resource.Profile }}</a></td>
+    
+        <td>{{ resource.Type }}</td>
+
+        <td>{{ resource.ComputableName }}</td>
+
+        <td>{{ resource.Definition }}</td>
+
+    </tr>
+
+{% endfor %}
+</tbody>
+</table>
+
+<hr style="margin-top: 3em; margin-bottom: 3em;">
+
+
 
