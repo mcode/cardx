@@ -50,6 +50,8 @@ pages:
     title: Use Cases
   related-igs.md:
     title: Related Implementation Guides
+  standards.md:
+    title: Standards
 #
 #
 # The parameters property represents IG.definition.parameter. Rather
